@@ -1,0 +1,2395 @@
+
+/*Cor para o fundo da tela.
+body{
+
+	background-color: orange;
+}
+*/
+
+
+/*As cores permanecem a mesma.
+h1{
+
+	color: blue;
+}
+*/
+
+
+/* Atacando a div outras div.
+#div1 h1{
+
+	color: green;
+}
+*/
+
+
+/* Criando um Menu básico e manipulando novas propriedades.
+	Margem espeçamento externo.
+
+*{
+	margin: 0;
+	padding: 0;
+}
+.Menu{
+	width: 900px;
+	background-color: red; 
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	outros exemplos
+	margin: 10px 50px;
+	margin: 10x auto;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 90px;
+	padding-bottom: 90px;
+	margin: 0 auto;
+}
+
+div.Menu{
+	width: 400px;
+}
+
+
+Margem espeçamento externo 2.
+
+*{
+	margin: 0;
+	padding: 0;
+
+Nesse exemplo estou espeficando mais elementos, por isso vai a div vai predominar não importa a posição.
+
+}
+div.Menu{
+	width: 400px;
+}
+
+
+}
+.Menu{
+	width: 900px;
+	background-color: red;
+	margin: 0 auto;
+}
+
+
+Nesse outro exemplo vai predominar só  a última que for inserida.
+
+}
+.Menu{
+	width: 900px;
+	background-color: red;
+	margin: 0 auto;
+
+
+}
+.Menu{
+	width: 900px;
+	background-color: black;
+	margin: 0 auto;
+}
+
+Mesmo que seja mais especifico que o outro a pontuação dos dois de especificação é a mesma, por isso permanece o último que ficar na linha do comando.
+}
+.Menu > a{
+	color: blue;
+}
+
+.Menu a{
+	font-size: 20px;
+	margin:0 10px;
+	color: red;
+}
+
+*/
+
+
+/* Ainda sobre Menu.
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+Mesmo que aqui esteja atacando tudo o debaixo é mais especifico e prevalece.
+a{
+	text-decoration: none;
+}
+
+
+.Menu{
+	width: 900px;
+	margin: 30px auto;
+	text-align: center;
+}
+
+.Menu a{
+	color: red;
+	padding-right: 8px;
+	border-left: 1px;
+	border-right: 1px;
+	border-top: 1px;
+	border-bottom: 1px;
+	border-width: 1px;
+	border-right: 3px solid red;
+	text-decoration: underline;
+	font-size: 20px;
+	margin:0 10px;
+
+}
+
+*/
+
+
+/* Manipulando fontes e texto.
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.artigo{
+
+		width: 1280px;
+		background-color: green;
+		padding: 40px;
+		margin: 40px auto;
+		text-align: center;
+}
+
+.artigo h1{
+
+	/*Posso usar esses exemplos para opção de cor.
+	color: red;
+	color:#069 azul #fff; branco */
+	/*Exemplos de tamanho de fonte.
+	font-size: 1em; em unidade 2em; mesma coisa que 100%; 200%;
+
+	Exemplos de fonte para texto.
+	font-family: "Times new roman", times, serif; para o navegador tentar ler uma dessas fontes de acordo com o padrão w3c.
+	font-family: "tahoma"; 'tahoma'; tahoma; pode usar dessas três formas que é a mesma coisa. */
+	/*font-style: normal; italic; oblique; */
+	/*font-weight: por padrão é bold; que é negrito */
+	/*font-variant: small-caps; fonte diferenciada */
+	
+	/*Começa aqui artigoh1.
+	color: rgb(204, 67, 202);
+	font-size: 23px;
+	font-family: tahoma;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.artigo p{
+
+	/*color: #b4b4b4; hexadecimal cor cinza
+	Para alinhar o parágrafo do texto para a esquerda.
+	text-align: left;
+	Quebra de linha do texto, pular uma linha.
+	line-height: 40px; */
+
+	/*Começa aqui artidop.
+	color: #b4b4b4;
+	text-align: left;
+	font-size: 17px;
+	font-family: 'tahoma';
+	font-style: normal;
+	font-weight: bold;
+	line-height: 40px;
+	margin-top: 12px;
+}
+
+*/
+
+
+/* Manipulando dimensões altura/largura.
+
+Definimos altura para div quando queremos trabalhar com imagens, textos que sabemos exatamente o tamanho que não vai mudar, básicamente dimensões prédefinidas.
+Para definir a largura 100% devemos chamar o html e o body e aplicar 100% para que ambas dessas tags ocupem 100%, por padrão elas não são 100% do tamanho da tela.
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	height: 100%;
+}
+
+.artigo{
+
+		/*width: 4%; quebra a largura no texto*/
+		/*max-width: 300px; */
+		
+		/*width: auto; largura */
+		/*height: auto; altura */
+
+		/*Começa aqui.
+		width: 100%;
+		height: auto;
+		background-color: rgb(200,200,200);
+		text-align: center;
+}
+
+.artigo h1{
+
+	color: rgb(66, 149, 244);
+	font-size: 23px;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.artigo p{
+
+	color: #b4b4b4;
+	text-align: left;
+	font-size: 17px;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 40px;
+	margin-top: 12px;
+}
+
+*/
+
+
+/* Listas e níveis de importância no CSS. altura mínima/largura mínima.
+
+Obs:aqui estou atacando html,body e estou dizendo que a altura é 100%,
+a largura por padrão já vem definida 100% a altura não, então 
+quando queremos usar porcentagem na altura em nosso website temos que dizer
+que queremos que o html e o body começem com 100% da altura da nossa janela 
+para que os nossos outros elementos consigam herdar esse valor, pois quando
+utilizamos porcentagem é sempre com base na div mãe/pai elemento mãe/pai
+que é a mesma coisa.
+
+html,body{
+	height: 100%;
+}
+
+.lista,.lista2{
+	list-style-position: inside;
+	list-style-type: disc;
+	margin-left: 20px;
+}
+
+.lista .item3, .lista2 .item3{
+	font-weight: bold;
+	color: black;
+	background-color: red;
+}
+
+.lista li,.lista2 li{
+	font-size: 18px;
+	color: red;
+	background-color: yellow;
+	margin-top: 10px;
+}
+
+*/
+
+
+/* A diferença básica quando utilizamos o ul ou o ol é que por padrão o ol 
+já vem com os números enquanto a ul por padrão vem com o list-style-type: disc;
+
+html,body{
+	height: 100%;
+}
+
+ol{
+	list-style-position: inside;
+}
+
+ol > li{
+	color: red;
+}
+
+*/
+
+
+/* Continuidade sobre como especificar listas.
+
+html,body{
+	height: 100%;
+}
+
+.um{
+	width: 500px;
+	height: 800px;
+	background: green;
+}
+
+.um > .dois{
+	width: 300px;
+	height: 300px;
+	background: orange;
+}
+
+.um > .tres{
+	width: 100px;
+	height: 100px;
+	background: blue;
+}
+
+.um > .tres > .quatro{
+	width: 100px;
+	height: 100px;
+	background: gray;
+}
+
+*/
+
+
+/* Realizando a mesma classe
+Estilo para o conteúdo do nosso site
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	height: 100%;
+}
+
+.tipo1{
+	color: rgb(100,100,100);
+}
+
+a.link_{
+	font-size: 30px;
+}
+
+.tipo2{
+	font-size: 40px;
+}
+
+*/
+
+
+/* Limitando as dimensões
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	height: 100%;
+}
+
+/*.header{
+	width: 100%;
+	min-width: 1280px;
+	height: 200px;
+	background: gray;
+
+}
+*/
+
+/*.article{
+	margin: 0 auto;
+	width: 1280px;
+	height: 600px;
+	background: red;
+}
+*/
+
+/*.article{
+	margin: 0 auto;
+	width: 1280px;
+	height: 200%;
+	max-height: 20%;
+	min-height: 50%;
+	background: red;
+}
+*/
+
+/*.article{
+	margin: 0 auto;
+	width: 1280px;
+	background: red;
+}
+*/
+
+
+/* Mais sobre espaçamentos
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	height: 100%;
+}
+
+.center{
+	/*box-sizing: content-box; por padrão--
+	width: 1280px;
+	margin: 0 auto;
+	/*padding-left: 30px;--
+	/*box-sizing: border-box;--
+	background-color: gray;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+/*.artigo{
+	margin-left: 30px;
+	margin-right: 80px;
+	margin-left: 80px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 1280px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+}
+*/
+
+ /*Maneira mais fácil para simplificar as marggens no sentido horário.
+.artigo{
+	margin: 50px 30x 50px 30px;
+	margin: acima e abaixo 40px direita e esquerda 30px;
+	margin: 40px 30px;
+}
+--
+
+.artigo{
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+*/
+
+
+/* A propriedade display e técnicas de espaçamentos.
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	height: 100%;
+}
+
+/*.center{
+	box-sizing: content-box;
+	width: 1280px;
+	margin: 0 auto;
+	background-color: pink;
+}
+
+.artigo{
+	/*box-sizing: border-box;
+	border: 3px solid rgba(255,255,255,1);
+	border: 5px solid yellow;
+	border-style: dotted;
+	border-left-style: dotted;
+	border-width: 3px;
+	border-color: rgb(255,0,0);
+
+	margin-top: 30px;
+
+	Técnica/dica para quando queremos colocar mais de uma div na mesma linha, quando queremos definir dimensões e não queremos que ela vá para baixo.
+	margin-right: -4px;
+	margin: 10px 17px;
+
+	Posso usar só border: ou como está abaixo e assim por diante.
+	border-right:
+	borde-top:
+	border-bottom: 3px dotted pink;
+
+	/*(Exemplo para usar o outline)
+	outline: 50px solid orange;
+	vertical-align: top;
+	display: inline-block;
+	margin-right: -4px;
+	margin-top: 30px;
+	width: 640px;
+
+	/*(Exemplo para usar no inline)
+p{
+	display: inline-block;
+	width: 30px;
+	margin-right: -4px;
+	height: 300px;
+	background: orange;
+}
+
+*/
+
+
+/* Utilizar float e as vantagens
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	height: 100%;
+}
+
+.clear{
+	clear: both;
+}
+
+.pai{
+	width: 1280px;
+	padding: 20px 0;
+	margin: 20px auto;
+	background: black;
+}
+
+.child{
+	/*display: inline-block;/
+	/*margin-right: -4px;/
+	box-sizing: border-box;
+	width: 640px;
+	height: 300px;
+	background: pink;
+	/*(A vantagem de usar o float é que não tem nenhum espaçamento a mais, eu não preciso utilizar uma margem height -4px para corrigir/diferente do display inline block.)
+	float: right;/
+	float: left;
+	text-align: center;
+	font-size: 40px;
+	padding: 50px 0;
+	color: blue;
+	border: 1px solid gray;
+}
+
+*/
+
+
+/* O que é overflow e como utilizar
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	height: 100%;
+}
+
+.box,.box2{
+	width: 300px;
+	/*height: 200px;/
+	/*margin: 0 auto;/
+	/*display: none;/
+	background: gray;
+	color: pink;
+	/*overflow: scroll;/
+	overflow: visible;
+	overflow: auto;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.box p,.box2 p{
+	width: 100%;
+}
+
+.box2{
+	background-color: blue;
+	margin-top: 20px;
+	display: block;
+}
+
+*/
+
+
+/* Auto, inherit(herdar) e initial(iniciar)
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	height: 100%;
+}
+
+.box{
+	width: 40%;
+	/*width: 400px;/
+	/*height: 400px;/
+	/*height: auto;*/
+	/*height: 300px;
+	/*background: turquoise;*/
+	/*color: purple;/
+}
+*/
+
+/*.box p{
+	color: initial; /*valor inicial do navegador, valor padrão que tem no navegador.*/
+	/*margin: initial; /* o valor initial basicamente é para resetar o valor e dizer que quer usar o valor padrão, default do navegador.*/
+	/*background-color: initial;
+}
+*/
+
+/*.box2{
+	/*width: 250px;
+	height: 900px;
+	/*background: violet;/
+}
+*/
+
+/*.box > .box2 > span{
+	display: inline-block;
+	/*width: inherit;
+	height: inherit;
+	background: inherit;
+}*/
+
+/*(apenas um exemplo de design responsivo)
+@media screen and (max-width: 480px){
+	.box{
+		height: auto;
+	}
+}
+
+*/
+
+
+/* Manipulando elementos no CSS via atributo(s)
+
+*{
+	margin: 0;		
+	padding: 0;
+
+					/*margin{	 
+							propriedades de reset.
+					padding{/
+}
+
+html,body{
+	height: 100%;
+}
+*/
+
+/*
+
+TEM QUE SER IGUAL!
+
+a[href="http://www.google.com"]{
+	background-color: yellow;
+}
+
+[href="http://www.google.com"]{
+	background-color: red;
+}
+*/
+
+/*a[href*="google"]/*, a[href*="danki"]/{
+	background-color: orange;
+}
+*/
+
+/*
+
+PROCURE ENTRE OS ESPAÇOS DO ATRIBUTO.
+
+a[attr~="google"]{
+	background-color: orange;
+}
+*/
+
+/*
+
+ACHE A PALAVRA EM QUALQUER LUGAR.
+
+a[attr*="google"]{
+	background-color: orange;
+}
+*/
+
+/*
+
+QUANDO COMEÇAMOS COM A PALAVRA GOOGLE SEGUIDO POR UM ACENTO.
+
+a[attr|="google"]{
+	background-color: purple;
+}
+*/
+
+/*
+
+QUANDO COMEÇAMOS COM A PALAVRA.
+
+a[attr^="goo"]{
+	background-color: gray;
+}
+*/
+
+/*
+
+QUANDO TERMINAMOS COM A PALAVRA.
+
+a[attr$="google"]{
+	background-color: gold;
+}
+*/
+
+/*.text[type=text]{
+	background-color: brown;
+}
+
+input[type=submit]{
+	background-color: navy;
+}
+*/
+
+
+/* Aprendendo a utilizar a propriedade position.
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	height: 100%;
+}
+
+/*
+.table1{
+	width: 900px;
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+
+table tr td{
+	background-color: silver;
+	height: 300px;
+	vertical-align: top;
+	/*vertical-align: middle;
+	vertical-align: bottom;/
+	border: 3px solid navy;
+}
+*/
+
+/*
+.menu-fixed{
+	position: static; /*relative; absolute; fixed; por padrão sempre é static; no static não podemos modificar os valores left, top, bottom, right porque já é definido por padrão.*/
+	/*left: 50px;
+	top: 300px;
+	right: -40px;
+	bottom: -40px;
+	left: 0;
+	top: 0;
+	left: 50px;
+	top: 700px;
+	left: 30px;
+	top: 70px;/
+
+	width: 300px;
+	height: 200px;
+	background: #069;
+}
+*/
+
+/*
+.box{
+	/*width: 100%;
+	height: 1400px;/
+
+	width: 400px;
+	height: 500px;
+	background: violet;
+}
+
+.box p{
+	width: 400px;
+}
+*/
+
+
+/* Tudo sobre backgrounds e como utilizar.
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	height: 100%;
+}
+
+.bg{
+	width: 50%;
+	height: 50%;
+	margin: 0 auto;
+
+	/*Backgrounds*/
+
+	/*background-color: purple;
+	background-image: url('../imagens/imagem2.jpeg');
+	/*background-size: 100% auto;
+	background-size: auto 100%;
+	background-size: 60px 80px;*/
+	/*background-repeat: repeat-x repeat-y;*/
+	/*background-size: cover; /*contain;*/
+	/*==> Para utilizar % no background-position, tem que ser algo muito específico. Pois o cálculo que é utilizado para conversão de % para px não mantém um padrão.*/
+	/*background-position: /*90px 90px; /*left top; left center; 100% 100%; 25% 25%; -32px -32px; 50px 50px; right top; center;*/
+	/*background-repeat: no-repeat;
+}
+*/
+
+
+/* Mais sobre backgrounds, text-align e exercícios.
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	height: 100%
+}
+
+.bg{
+	/*width: 100%; /*500px;*/
+	/*margin: 0 auto;
+	height: 30vw; /*30vh; 700px; 400px;*/
+	/*background-image: url('../imagens/imagem4.jpg');
+	background-size: cover;
+	background-attachment: fixed; /*scroll;*/
+	/*background-color: brown;
+	background-repeat: no-repeat;*/
+
+	/*background-size: 90px 30px; /*auto; cover; contain;*/
+	/*background-repeat: no-repeat;
+	background-position: center; /*-10% 200%; -10% -10%; -10% 0; 0 0; 110% 110%; right bottom; 100% 200%;/
+}
+*/
+
+/*.box{
+	width: 100%;
+	/*height: 2000px;
+	background-color: navy;*/
+	/*margin: 80px auto;
+	text-align: center;
+	background-color: orange;
+}
+*/
+
+/*.item{
+	width: 100%; /*33.3%; 100%;*/
+	/*margin-right: -4px; /*margin: 0 40px;*/
+	/*background: brown;*/
+	/*display: inline-block;
+}
+*/
+
+/*.item img{
+	width: 100%; /*16%; 30%;/
+}
+*/
+
+/*.item p{
+	background-color: purple;
+	display: inline-block;
+	text-align: right; /*left;/
+}
+*/
+
+/*.last{
+	margin-right: 0;
+}
+*/
+
+
+/* Pseudo-classes 1/3
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	height: 100%;
+}
+
+.teste,.teste1,.teste2{
+	width: 300px;
+	margin-top: 30px;
+	margin-left: 30px;
+	display: inline-block;
+	height: 30px;
+	/*background-color: purple;/
+}
+*/
+
+/*
+.teste1{
+	background-color: violet;
+}
+
+.teste2{
+	background-color: navy;
+}
+*/
+
+/*
+.teste:hover{
+	height: 900px;
+	background-color: gold;
+}
+
+.teste:hover,.teste1,.teste2{
+	vertical-align: top;
+}
+*/
+
+/*Active serve para quando estamos com o mouse pressionado em cima do nosso elemento.
+
+.teste:active{
+	background-color: brown;
+}
+*/
+
+/*Focus serve para quando clicamos e focamos o nosso elemento do formulário.
+
+textarea,input
+
+.teste:focus{
+	background-color: silver;
+}
+
+.textarea1{
+	display: block;
+	width: 600px;
+	height: 400px;
+}
+*/
+
+/* Não recomendo utilizar essas classes a não ser quando for para manipular esse tipo de evento com o javascript.
+
+.link1:link{
+	color: blue;
+}
+
+.link1:visited{
+	color: purple;
+}
+
+.link1{
+	color: orange;
+}
+*/
+
+
+/*Pseudo-classes 2/3
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	height: 100%;
+}
+
+ul{
+	list-style-position: inside;
+}
+
+/*De acordo com o tipo do elemento*/
+/*
+ul li:nth-of-type(2){
+	color: violet;
+}
+*/
+
+/*De acordo com as filhas ou filhos.
+/*
+ul span:nth-child(6){
+	color: blue;
+}
+*/
+
+/*
+.box{
+	width: 100%;
+}
+*/
+
+/*
+.item{
+	box-sizing: border-box;
+	float: left;
+	width: 33.3%;
+	height: 400px;
+	background-color: violet;
+	border: 1px solid navy;
+}
+*/
+
+/*
+Pegamos o último elemento do mesmo tipo.
+
+.box div:last-of-type,.box p:last-of-type{
+	background-color: green;
+}
+
+/*
+.box p:last-of-type{
+	background-color: gold;
+}
+*/
+
+/*
+.box > div{
+	box-sizing: border-box;
+	float: left;
+	width: 33.3%;
+	height: 400px;
+	background-color: red;
+	border: 1px solid purple;
+}
+*/
+
+/*
+.box div:last-of-type p{
+	color: orange;
+}
+*/
+
+/*
+.box div:last-child p{
+	color: green;
+}
+*/
+
+/*
+Negação! Aplique o estilo para todas as divs que NÃO tenha a classe ONE.
+.box div:not(.one){
+	background-color: gold;
+}
+*/
+
+/*
+p:empty{
+	width: 200px;
+	height: 200px;
+	background-color: orange;
+}
+*/
+
+/* Pegue todas as classes que tenham p e insira depois e depois de terminar o texto tudo o seguinte conteúdo Liliane.
+
+.p::after{
+	content: ' Liliane';
+	background-color: blue;
+}
+
+.p::before{
+	content: 'Liliane ';
+}
+*/
+
+
+/* Pseudo-classes 3/3
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	height: 100%;
+}
+
+.parent{
+	background-color: purple;
+	width: 100%;
+	padding: 90px 0;
+	text-align: center;
+}
+
+.item{
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	background-color: orange;
+	margin: 20px 0;
+}
+
+/*
+Fórmulas: Estamos dizendo que a cada 3 elementos aplique o estilo, incluindo o 3.
+
+.parent div:nth-of-type(3n + 1) div.item{
+	background-color: blue;
+}
+*/
+
+/*
+.parent div:first-child div.item{
+	background-color: blue;
+}
+*/
+
+/*
+.parent p:first-of-type{
+	color: red;
+}
+*/
+
+/*
+.parent p:first-child{
+	color: brown;
+}
+*/
+
+
+/* Criando formulário de contato profissional.
+
+{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	height: 100%;
+}
+
+form{
+	width: 96%;
+	max-width: 600px;
+	margin: 30px auto;
+	text-align: center;
+	background-color: black;
+}
+
+form fieldset{
+	padding: 20px 40px;
+	border: 2px solid gold;/*dotted; dashed;*./
+}
+
+form legend{
+	/*text-align: initial;um exemplo*./
+	text-align: left;
+	font-size: 20px;
+	color: brown;
+}
+
+form input[type=text]{
+	font-family: tahoma;
+	display: inline-block;
+	margin-top: 30px;
+	width: 80%;
+	padding: 10px 13px;
+	border: 1px solid gold;
+}
+
+form input[type=text]:focus, form select:focus, form textarea:focus{
+	outline: 0;
+	background-color: pink;
+}
+
+form select{
+	font-family: tahoma;
+	color: brown;
+	width: calc(80% + 1px);
+	margin-top: 30px;
+	padding: 10px 13px;
+	display: inline-block;
+	border: 1px solid gold;
+}
+
+form select option[disabled]{
+	color: purple;
+}
+
+form select option:nth-of-type(3){
+	color: blue;
+}
+
+form h2{
+	margin-top: 20px;
+	color: brown;/*rgb(100,100,100);*./
+}
+
+.input{
+	display: inline-block;
+	text-align: left;
+	margin-top: 20px;
+}
+
+.input span{
+	margin-left: 13px;
+	font-size: 16px;
+	color: rgb(130,130,130);
+}
+
+form textarea{
+	font-family: tahoma;
+	border: 1px solid gold;
+	margin-top: 30px;
+	width: 80%;
+	height: 140px;
+	padding: 10px 13px;
+	resize: none;
+}
+
+form input[type=submit]{
+	margin-top: 30px;
+	border: 0;
+	/*width: 140px;
+	height: 40px;*./
+	font-size: 16px;
+	cursor: pointer;/*help; wait; crosshair;*./
+	border: 2px solid gold;
+	color: brown;
+	background-color: silver;
+}
+*/
+
+
+/*Falta terminar essa aula
+/* Personalizando elementos de formulários
+
+{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	height: 100%;
+}
+
+/*
+input[type=file]{
+	display: none;
+}
+
+label{
+	display: block;
+	margin: 20px auto;
+	cursor: pointer;
+	font size: 17px;
+	width: 220px;
+	height: 40px;
+	background-color: purple;
+	color: orange;
+	text-align: center;
+	line-height: 40px;
+}
+*./
+
+form{
+	text-align: center;
+	background-color: orange;
+	padding: 30px 0;
+}
+
+/*
+form select{
+	width: 220px;
+	height: 30px;
+	border: 0;
+	padding-left: 10px;
+	background-image: url('../imagens/imagem2.jpeg');
+	background-size: 10px 20px;
+	background-repeat: no-repeat;
+	background-position: 96% 8px;
+	appearance: none;
+	-webkit-appearance: none; /*chrome*./
+	-moz-appearance: none; /*mozila firefox*./
+}
+
+select::-ms-expand{ /*internet explore*./
+	display: none;
+}
+*./
+
+input[type=checkbox]{
+	display: none;
+}
+
+label{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-color: purple;
+}
+
+input[type=checkbox]:checked + label{
+	background-color: navy;
+}
+*/
+
+
+/* Fontes personalizadas e mais conceitos.
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@font-face{
+	font-family: "Open Sans";
+	src:url('../Fonts/OpenSans-Light.ttf');
+}
+
+html,body{
+	height: 100%;
+	font-family: "Open Sans";
+}
+
+/*Como utilizar o asteristico*
+form > *{ Devo utilizar para pegar diretamente tudo que tem dentro do meu formulário.*./
+
+form *{ /*Devo utilizar para pegar tudo que está dentro especificando para cada um individualmente a propriedade font-family, pega absolutamente tudo que tem dentro do meu formulário desde de div filha div filha da filha por exemplo*./
+	font-family: "Open Sans";
+}
+
+/*Importando fonte do próprio diretório/pasta.
+
+@font-face{
+	font-family: "Open Sans";
+	src:url('../Fonts/OpenSans-Light.ttf');
+}
+*/
+
+/*
+Quando utilizamos o !important o nível de especificação deixa de existir.
+Quando mais de 1 estão utilizano o !important então o nível de especificação volta a contar.
+
+.box p{
+	font-family: "Open Sans";
+}
+
+.text{
+	font-family: "tahoma" !important;
+}
+*/
+
+
+/* Porcentagem em margin padding.
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.parent{
+	width: 50%;
+	height: 400px;
+	background-color: orange;
+}
+
+.box{
+	width: 50%;
+	margin-left: 50%;
+	padding-top: 25%;
+	display: inline-block;
+	background-color: gray;
+}
+*/
+
+
+/* VW VH e Calc.
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	height: 100%;
+}
+
+/*
+.sidebar{
+	width: 300px;
+	height: 100%;
+	background: #4F4F4F;
+	float: left;
+}
+
+.content{
+	float: left;
+	width: calc(100% - 300px);
+	height: 100%;
+	background: #BDB76B;
+}
+*/
+
+/*
+.box{
+	width: calc((100% / 3) + 90px);
+	height: 90px;
+	background-color: #BDB76B;
+}
+*/
+
+/*Viewport width = Largura do viewport - OBS: Não leva em conta a scrollbar;*./
+/*Viewport heigth = Altura do viewport - OBS: Não leva em conta a scrollbar;*./
+
+.box{
+	width: 100vw;
+	height: 100vh;
+	/*height: 90px;*./
+	background-color: #BDB76B;
+}
+
+.box2{
+	width: 200%;
+	height: 10px;
+	/*width: 10px;
+	height: 9000px;*./
+}
+*/
+
+
+/* Entendendo viewport e iniciando media queries.
+Mais sobre media queries.
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+	height: 100%;
+}
+
+.box{
+	border: 1px solid #B8860B;
+	width: 33.3%;
+	height: 300px;
+	background-color: #4682B4;
+	float: left;
+}
+
+/*
+@media screen and (min-aspect-ratio: 2/1){
+	.box{
+		width: 100%;
+	}
+}
+
+@media screen and (max-aspect-ratio: 2/1){
+	.box{
+		width: 100%;
+	}
+}
+
+768PX DE WIDTH OU 500PX DE ALTURA
+@media screen and (max-width: 768px) , screen and (max-height: 500px){
+	.box{
+		width: 100%;
+	}
+}
+
+768PX DE WIDTH E 500PX DE ALTURA
+@media screen and (max-width: 768px) and (max-height: 500px){
+	.box{
+		width: 100%;
+	}
+}
+
+@media screen and (min-height: 320px){
+	.box{
+		width: 50%;
+	}
+}
+
+@media screen and (max-height: 580px){
+	.box{
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 320px){
+	.box{
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 580px){
+	.box{
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 580px){
+	.box{
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 320px){
+	.box{
+		width: 100%;
+	}
+}
+*/
+
+
+/* Float e inline-block para o responsivo.
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+	height: 100%;
+}
+
+.container{
+	/*overflow: hidden;*./
+	padding: 30px 0;
+	/*width: 98%;
+	max-width: 1200px;
+	margin: 0 auto;*./
+	background-color: #ccc;
+	text-align: center;
+}
+
+.box{
+	border: 2px solid black;
+	width: 33%;
+	height: 300px;
+	max-width: 300px;
+	margin-right: -4px;
+	margin-bottom: -4px;
+	background-color: red; /*#4682B4;*/
+	/*float: left;*./
+	display: inline-block;
+}
+
+.box: last-child{
+	margin-right: 0;
+}
+
+@media screen and (max-width: 768px){
+
+	.container{
+		text-align: right;
+		padding: 2% 20px;
+	}
+
+	.box{
+		/*max-width: none;*./
+		width: 50%;
+	}
+
+	.box: nth-of-type(2){
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 580px;){
+	.box{
+		width: 100%;
+		margin-right: 0;
+	}
+}
+*/
+
+
+/* Entendendo propriedade Z-INDEX.
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+	height: 100%;
+}
+
+.slider{
+	width: 97%;
+	margin: 0 auto;
+	max-width: 700px;
+	height: 500px;
+	border: 1px solid orange;
+	position: relative;
+}
+
+.img-slider{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.one{
+	background-color: #FF00FF;
+	z-index: 3;
+}
+
+.two{
+	left: 40px;
+	background-color: #008080;
+	z-index: 2;
+}
+
+.three{
+	left: 80px;
+	background-color: #8A2BE2;
+	z-index: 1;
+}
+*/
+
+
+/*Estudo detalhado das tags.
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header.principal{
+	width: 100%;
+	padding: 20px 0;
+	background-color: #ccc; 
+}
+
+header.principal > nav{
+	text-align: center;
+}
+
+header.principal > nav > ul{
+	list-style-type: none;
+}
+
+header.principal > nav > ul > li{
+	display: inline-block;
+	margin: 0 25px;
+}
+*/
+
+
+/* Transitions.
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+div.box{
+ 	width: 300px;
+ 	height: 300px;
+ 	background-color: orange;
+ 	/*Para garantir que animação vai rodar no safari e em todos os navegadores, temos que usar o prefixo abaixo.
+
+ 	-webkit-transition-property: width height;
+ 	transition-property: width height;
+ 	-webkit-transition-property: 3s;
+ 	transition-duration: 3s;
+ 	transition-delay: 1s;
+ 	-webkit-transition-timing-function: linear;
+ 	transition-timing-function: linear;*./
+ 	-webkit-transition: 1s width, 3s height;
+ 	transition: 1s width, 3s height;
+ 	-webkit-transition-delay: 2s;
+ 	transition-delay: 2s;
+}
+
+
+div.box:hover{
+	width: 600px;
+	height: 400px;
+}
+
+/*Apenas exemplo
+	form input{
+	width: 200px;
+	height: 20px;
+	transition: 1s;
+	border: 1px solid #ccc;
+}
+
+form input:focus{
+	width: 300px;
+}
+*./
+
+*/
+
+
+/* Key frames.
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+div.box{
+	width: 300px;
+	height: 300px;
+	position: relative;
+	background-color: purple;
+	/*animation-name: animacao_1;
+	animation-duration: 2s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;*/
+	/*Para resumir em uma linha fica assim abaixo:
+	animation: animacao_1 2s 2;
+	animation-delay: 2s;*./
+
+}
+
+div.box:hover{
+	animation: animacao_1 4s 2;
+	animation-delay: 2s;
+}
+
+@keyframes animacao_1{
+	0%{
+		left: 0;
+		top: 0px;
+		background-color: purple;
+
+	}
+
+	45%{
+		border: 3px solid red;
+		left: 100px;
+		top: 10px;
+		background-color: orange;
+	}
+
+	100%{
+		border: 0;
+		left: 0;
+		top: 0px;
+		background-color: #DC143C;
+	}
+}
+
+*/
+
+
+
+/* Opacidade e box-shadow
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*div.box{
+	position: relative;
+	width: 200px;
+	height: 200px;
+}
+
+div.box img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+div.box p{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	transition: 1s;
+	background-color: green;
+}
+
+div.box p:hover{
+	opacity: 0.4;
+}
+*./
+
+div.box{
+	text-align: center;
+}
+
+div.box img{
+	width: 40%;
+	/*transition: 1s;
+	box-shadow: 10px 10px 15px 5px #363636;*./
+	animation-name: animacao;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	-webkit-box-shadow: 10px 10px 15px 5px #363636;
+	box-shadow: 10px 10px 15px 5px #363636;
+}
+
+@keyframes animacao{
+
+	0%{
+		box-shadow: 10px 10px 15px 5px #363636;
+	}
+
+	50%{
+		box-shadow: 30px 20px 15px 5px #363636;
+	}
+
+	100%{
+		box-shadow: 10px 10px 15px 5px #363636;
+	}
+}
+
+*/
+
+
+
+/* Básicos sobre o console do navegador.
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.box h2{
+	color: purple;
+	font-size: 24px;
+}
+
+.box p{
+	color: rgb(130,130,130);
+	font-size: 17px;
+	font-style: italic;
+}
+
+.box2{
+	margin-top: 20px;
+}
+
+.box2 h2{
+	color: orange;
+	font-size: 24px;
+}
+
+.box2 p{
+	color: #6A5ACD;
+	font-size: 17px;
+	font-style: italic;
+}
+
+*/
+
+
+
+/* Transform e border-radius.
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*box{
+	width: 500px;
+	height: 500px;
+	background: black;
+	margin: 50px auto;
+	/*Se quiser tudo numa linha border-radius: 250px;
+	Outro exemplo border-top-right-radius: 20px;
+	Selecionar uma por uma border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}*/
+
+
+/* Parte 1 - Aprendendo a utilizar o border-radius + responsivo
+
+.box{
+	width: 30%;
+	padding-top: 30%;
+	margin: 50px auto;
+	position: relative;
+}
+
+.teste{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background: orange;
+}
+
+/* Part2 - Aprendendo a utilizar o transform.*./
+
+.transform{
+	/*OBS: Para as versões abaixo do 9 do internet explorer para funcionar a propriedade transform é preciso colocar o préfixo abaixo -ms-*./
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	width: 40%;
+	max-width: 500px;
+	height: 500px;
+	border: 3px solid #ccc;
+	border-radius: 8px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	/*transition: 2s;*./
+	animation-name: animacao;
+	animation-duration: 3s;
+}
+
+/*.transform:hover{
+	/*transform: translate(-50%,-50%) rotate(45deg) scaleX(2) scaleY(1.5);*./
+	transform: translate(-50%,-50%) rotateY(270deg);
+	border: 3px solid purple;
+	background-color: orange;
+}*./
+
+@keyframes animacao{
+	0%{
+		transform: translate(-50%,-50%) rotateY(0deg);
+	}
+
+	50%{
+		transform: translate(-50%,-50%) rotateY(180deg);
+	}
+
+	100%{
+		transform: translate(-50%,-50%) rotateY(0deg);
+	}
+}
+*/
+
+
+
+/* Projeto Landing Page com Bootstrap do youtube.
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.custom-logo{
+	height: 90px;
+}
+
+.container button{
+	background: black;
+}
+
+.carousel h2{
+	text-shadow: 0.2em 0.5em 0.1em #600,
+      -0.3em 0.1em 0.1em #060,
+      0.4em -0.3em 0.1em #006;
+}
+
+.carousel p{
+	text-shadow: 0.2em 0.5em 0.1em #600,
+      -0.3em 0.1em 0.1em #060,
+      0.4em -0.3em 0.1em #006;
+}
+*/
+
+
+
+/* Word-wrap,word-break e white-space.
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*.box{
+	width: 30px;/*100%;*./
+	/*padding: 30px 2%;*./
+	background-color: #B0E0E6;/*#DA70D6;*.
+	position: relative;
+	/*overflow: hidden;*./
+}
+
+.box p{
+	word-wrap: break-word;
+	/*word-wrap: normal;*./
+	display: inline;
+	border-bottom: 2px solid #FF4500;
+	color: black; /*#7FFF00;#444;*./
+	font-size: 13px;
+}
+*./
+
+p{
+	width: 100px;
+	background-color: gray;
+	white-space: pre-line; /*pre; normal; para quebras de linha*./
+
+}
+*/
+
+
+
+/* Display Table (CSS2).
+
+*{
+	margin: 0;
+	padding: 0;
+	/*box-sizing: border-box;*./
+}
+
+.table{
+	display: table;
+	width: 900px;
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+.table-row{
+	display: table-row;
+
+}
+
+.table-cel{
+	/*padding: 10px;*./
+	height: 400px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid orange;
+	display: table-cell;
+}
+*/
+
+
+
+/* Display Flex.
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main{
+	display: flex;
+	align-items: center;
+	flex-direction: column;/*column-reverse; row-reverse;*./
+}
+
+aside{
+	width: 300px;
+	/*order: 2;*./
+	background: #ccc;
+	padding: 90px 20px;/*30px;*./
+}
+
+article{
+	width: 800px;
+	/*order: 1;*./
+	padding: 30px;
+	/*height: 700px;*./
+	background: gray;
+}
+*/
+
+
+
+/* Efeito gradient.
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.box{
+	width: 100%;
+	height: 500px;
+	background: repeating-linear-gradient(yellow, yellow 10%, green 15%);
+	/*background: repeating-radial-gradient(yellow, yellow 10%, green 15%);
+	background: radial-gradient(circle, red 20%, orange 30%, green 50%);
+	background: repeating-linear-gradient(to right, purple, yellow 10%, green 20%);
+	background: repeating-linear-gradient(red, yellow 10%, green 20%);
+	background: repeating-linear-gradient(45deg,#ff00ff,rgba(0,255,0,0.5),orange,purple);
+	background: repeating-linear-gradient(-45deg, to bottom right, to bottom left);*./
+}
+*/
+
+
+
+/ Projeto #2 - Estudo e Proposta.
+  Projeto #2 - Criando formulário,banners.
+  Projeto #2 - Sessão chamada.
+  Projeto #2 - Finalizando banner e aplicando responsivo.
+  Projeto #2 - Criando mosaico responsivo.
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+html,body{
+	height: 100%;
+}
+
+/**Divs gerais!*/
+.container{
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.clear{
+	clear: both;
+}
+/******/
+
+header{
+	background-color: #696969;
+	padding: 10px 2% 25px 2%;
+}
+
+.logo-1{
+	 float: left;
+	 width: 100px;
+	 height: 60px;
+	 background-image: url('../imgprojetos/logo-1.png');
+	 background-size: 100% auto;
+	 background-repeat: no-repeat;
+	 background-position: center;
+	 /*background-color: purple;*/
+}
+
+.logo-2{
+	float: right;
+	width: 90px;
+	height: 60px;
+	background-image: url('../imgprojetos/logo-2.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	/*background-color: #363636;*/
+}
+
+section.cover-form{
+	width: 100%;
+}
+
+.bg{
+	position: relative;
+	height: 560px;
+	background-position: center;
+	background-size: cover;
+	background-image: url('../imgprojetos/bg-form.jpg');
+}
+
+.form-container{
+	position: absolute;
+	right: 30px;
+	z-index: 2;
+	top: -2.5%;
+	width: 400px;
+	height: 105%;
+	-webkit-box-shadow: 1px 1px 3px 1px #696969;
+	-moz-box-shadow: 1px 1px 3px 1px #696969;
+	box-shadow: 1px 1px 3px 1px #696969;
+	background-color: #ddd9ce;/*white;*/
+	opacity: 0.9;
+}
+
+.form-container h2{
+	font-weight: normal;
+	padding: 25px 15px;
+	color: #363636;
+	font-size: 18px;
+	background-color: rgba(234, 236, 239);/*rgba(210,210,210);*/
+}
+
+.form-container form{
+	margin-top: 30px;
+	padding: 15px;
+}
+
+.form-container form p{
+	font-size: 14px;
+	color: #525252;
+}
+
+.form-wraper:not(:first-child){
+	margin-top: 40px;
+}
+
+.form-wraper:last-child{
+	margin-top: 20px;
+}
+
+.form-container form input[type=text]{
+	width: 100%;
+	border: 1px solid #ccc;
+	height: 30px;/*45px;*/
+	line-height: 45px;
+	padding-left: 10px;
+}
+
+.form-container form input[type=submit]{
+	background-color: #033C50;/*#696969;*/
+	text-transform: uppercase;
+	color: white;
+	width: 100%;
+	font-size: 25px;
+	height: 50px; /*40px;*/
+	cursor: pointer;
+	border: 0;
+}
+
+section.chamada{
+	z-index: 1;
+	width: 100%;
+	text-align: center;
+	position: relative;
+}
+
+/*
+	Icone da seta na sessão feita em OFF!
+*/
+
+.icone-seta{
+	position: absolute;
+	left: 50%;
+	top: -32px;
+	transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	width: 64px;
+	height: 64px;
+	background-size: 100% 100%;
+	background-image: url('../imgprojeto2/arrow.png');
+}
+
+section.chamada div.container{
+	background-color: #29526d;
+	padding: 70px 0 50px 0;
+}
+
+section.chamada h2{
+	width: 98%;
+	max-width: 700px;
+	display: inline-block;
+	color: #C0C0C0;
+	font-size: 22px;
+	text-transform: uppercase;
+	font-weight: nornmal;
+}
+
+section.chamada p{
+	width: 98%;
+	max-width: 700px;
+	display: inline-block;
+	color: #C0C0C0;
+	margin-top: 10px;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.flex-mosaico{
+	display: flex;
+}
+
+.item-1-mosaico{
+	background-position: center;
+	background-size: cover;
+	width: 60%;
+}
+
+.item-2-mosaico{
+	background-color: rgb(220,220,220);/*#EEE8AA;/*#215170;*/
+	padding: 90px 40px;
+	width: 40%;
+}
+
+.item-2-mosaico p{
+	color: #363636;
+}
+
+footer .container{
+	text-align: center;
+	padding: 20px 0;
+	background-color: #A9A9A9;/*#29526d;/*#696969;/*rgb(220,220,220);*/
+}
+
+footer img{
+	width: 120px;
+}
+
+footer p{
+	margin-top: 8px;
+	color: #363636;
+}
+
+@media screen and (max-width: 1024px){
+	.bg{
+		height: auto;
+		padding: 80px 0;
+		text-align: center;
+	}
+
+	.form-container{
+		text-align: left;
+		height: auto;
+		width: 96%;
+		max-width: 400px;
+		position: static;
+		display: inline-block;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.flex-mosaico{
+		display: block;
+	}
+
+	.item-1-mosaico{
+		padding-top: 80%;
+		width: 100%;
+	}
+
+	.item-2-mosaico{
+		text-align: justify;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 510px){
+	header{
+		text-align: center;
+	}
+
+	[class^="logo"]{
+		margin-top: 10px;
+		display: inline-block;
+		float: none;
+	}
+}
+
