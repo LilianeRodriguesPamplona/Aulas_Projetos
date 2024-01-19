@@ -1592,3 +1592,301 @@ Estilo para o conteúdo do nosso site
 
 -->
 
+
+
+<!-- Introdução e exemplos Vanilla JS
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript</title>
+</head>
+	<body>
+
+		<h1 id="main-text">Olá, </h1>
+
+		<script>
+
+			window.onload = function(){
+				//Documento carregado.
+				var el = document.getElementById('main-text');
+				el.innerHTML = el.innerHTML + "Liliane";
+			}
+
+		</script>
+
+	</body>
+</html>
+-->
+
+
+
+<!-- Estilizando com base no ID
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript</title>
+</head>
+	<body>
+
+		<h1 id="main-text">Olá, </h1>
+
+		<script>
+
+			window.onload = function(){
+				//Documento carregado.
+
+				var el = document.getElementById('main-text');
+				el.innerHTML = el.innerHTML + "Liliane";
+
+				el.style.background = "orange";
+				el.style.marginLeft = "20px";
+				el.style.border = "3px solid blue";
+			}
+
+		</script>
+
+	</body>
+</html>
+-->
+
+
+
+<!-- Dominando querySelector
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript</title>
+</head>
+	<body>
+
+		<h1 id="main-text">Olá, </h1>
+		<div class="teste">
+			<p>Olá</p>
+		</div>
+		<p>Hey ow!</p>
+		<script>
+			window.onload = function(){
+				//Documento carregado.
+
+				var el = document.getElementById('main-text');
+				el.innerHTML = el.innerHTML + "Liliane";
+
+				el.style.background = "orange";
+				el.style.marginLeft = "20px";
+				el.style.border = "3px solid blue";
+
+				//var el2 = document.querySelector('p');
+
+				//el2.style.color = "red";
+
+				var elementos = document.querySelectorAll('p');
+
+				for(var i = 0; i < elementos.length; i++){
+					elementos[i].style.background = "gold";
+
+				}
+
+			}
+
+		</script>
+
+	</body>
+</html>
+-->
+
+
+
+<!-- Eventos JS
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript</title>
+</head>
+	<body>
+
+		<!-.-<h1 id="main-text">Olá, </h1>
+		<div onmouseover="displayMessage()" class="teste">
+			<p>Olá</p>
+		</div>
+		<p>Hey ow!</p>-.->
+
+		<div class="teste">
+			
+		</div>
+
+		<script>
+
+			function displayMessage(){
+				alert('Hey!');
+			}
+
+			window.onload = function(){
+				/*
+				//Documento carregado.
+
+				var el = document.getElementById('main-text');
+				el.innerHTML = el.innerHTML + "Liliane";
+
+				el.style.background = "orange";
+				el.style.marginLeft = "20px";
+				el.style.border = "3px solid blue";
+
+				//var el2 = document.querySelector('p');
+
+				//el2.style.color = "red";
+
+				var elementos = document.querySelectorAll('p');
+
+				for(var i = 0; i < elementos.length; i++){
+					elementos[i].style.background = "gold";
+				}*/
+
+				var el = document.querySelector('.teste');
+				el.innerHTML = '<p onclick="displayMessage()">Olá mund0!</p>';
+
+			}
+
+		</script>
+
+	</body>
+</html>
+-->
+
+
+
+<!-- Session e local storage
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript</title>
+</head>
+	<body>
+
+		<script>
+
+			window.onload = function(){
+
+				if (typeof(Storage) !== "undefined") {
+					alert('O navegador é compatível com storage');
+					initialize();
+				} else {
+					alert('Atualize seu navegador...');
+			}
+
+			function initialize(){
+				if(sessionStorage.getItem("nome") !== null){
+					alert("Olá, " + sessionStorage.nome + ", Seja bem-vindo(a) de volta :)");
+
+				}else{
+					alert('Olá! Essa é sua primeira visita no nosso site :)');
+					sessionStorage.nome = "Liliane";
+			}
+		 }
+	 }
+
+		</script>
+
+	</body>
+</html>
+-->
+
+
+
+<!-- Push notifications
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript</title>
+</head>
+	<body>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/0.0.11/push.min.js"></script>
+
+		<script>
+			
+			if(Push.Permission.get() != 'granted'){
+				Push.Permission.request();
+			}
+
+			if(Push.Permission.get() == "granted"){
+				Push.create('Olá da danki Code!', {
+					body: 'Esta é uma notificação',
+					icon: 'icon;png',
+					timeout: 3000,      //Timeout before notification closes automatically.
+					// vibrate: [100, 100, 100],      // An array of vibration pulses for mobile devices.
+					onClick: function(){
+						// Callback for the notification is clicked.
+						window.location.href="https://dankicode.com";
+					}
+				});
+			}
+
+		</script>
+
+	</body>
+</html>
+-->
+
+
+
+<!-- Var,let e const
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript</title>
+</head>
+	<body>
+
+		<script>
+			
+			//var, let e const
+			const nome = "Lika";
+			
+			var idade = 24;
+
+			idade = 23;
+
+			idade = 22;
+
+			printTela();
+			function printTela(){
+				console.log(idade);
+			}
+
+			if(true){
+				let nome2 = "João";
+				console.log(nome2);
+			}
+
+		</script>
+
+	</body>
+</html>
+-->
+
+
+
+<!- Orientação a Objetos
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript</title>
+</head>
+	<body>
+
+		<script>
+			
+			
+
+		</script>
+
+	</body>
+</html>
